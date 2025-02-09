@@ -14,6 +14,7 @@ OUTPATH = Path("transcripts/")
 SEASONDIR_FMT = "S%d"
 EPISODEFILE_FMT = "E%02d_%s.txt"
 SCRAPER_NAME = "my_little_pony"
+NUM_SEASONS = 9
 
 # TODO: Replace with name of scraper module in 'scrapers/'.
 from scrapers import my_little_pony
@@ -46,4 +47,5 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-#main()
+if __name__ == '__main__':
+    main()
